@@ -1,0 +1,141 @@
+.tweet-card {
+  padding: 7px 0px;
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  margin-bottom: 5px;
+  border-top: 0.5px solid var(--border-color);
+  flex: 1;
+}
+
+.tweet__profile-image {
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.tweet__profile-image img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tweet__data {
+  width: 93%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet__profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tweet__profile-info:nth-child(1):hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.tweet__name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tweet__name .name {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+.tweet__name .bxs-badge-check {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.tweet__data.golden .bxs-badge-check {
+  color: rgb(255, 174, 0);
+}
+
+.tweet__text {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--dark);
+}
+
+.tweet__text span {
+  color: var(--primary-color);
+}
+
+.tweet__picture img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.tweet__video video {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.tweet__name .username,
+.tweet__name .time-ago {
+  color: var(--grey);
+  font-size: 15px;
+}
+
+.tweet__options {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin-top: 10px;
+  color: var(--grey);
+  gap: 40px;
+}
+
+.tweet__option {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tweet__option p {
+  font-size: 13px;
+}
+
+.tweet__option i {
+  font-size: 16px;
+}
+
+.tweet__options .retweets .bx,
+.tweet__options .likes .bx,
+.tweet__options .views .bx,
+.tweet__options .bx.bx-upload {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.tweet__options .comments:hover,
+.tweet__options .views:hover,
+.tweet__options .bx.bx-upload:hover {
+  color: var(--primary-color);
+}
+
+.tweet__options .retweets:hover {
+  color: mediumseagreen;
+}
+
+.tweet__options .likes:hover {
+  color: rgb(181, 0, 76);
+}

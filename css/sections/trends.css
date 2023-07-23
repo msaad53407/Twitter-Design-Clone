@@ -1,0 +1,67 @@
+.trends {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+}
+
+.trends h3 {
+  font-size: 20px;
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+.trend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px 15px;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.show-more a {
+  color: var(--primary-color);
+}
+
+.trend:hover {
+  background-color: rgba(128, 128, 128, 0.187);
+}
+
+.show-more:hover {
+  background-color: rgba(128, 128, 128, 0.187);
+  border-radius: 0 0 16px 16px;
+}
+
+.trend-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend .bi.bi-three-dots {
+  color: var(--grey);
+}
+
+.trend-heading {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.trend-subheading,
+.trend-tweet-number {
+  color: var(--grey);
+  font-weight: 300;
+  font-size: 13px;
+}

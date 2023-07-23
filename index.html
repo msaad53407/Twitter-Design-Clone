@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Design Clone</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f452985fec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="left-sidebar__options">
+          <div class="logo-bar">
+            <i class="bx bxl-twitter logo"></i>
+            <i class="bx bx-moon theme-switcher"></i>
+          </div>
+          <div class="home left-sidebar__option mobile__nav">
+            <i class="bx bxs-home-circle"></i>
+            <a>Home</a>
+          </div>
+          <div class="search left-sidebar__option mobile__nav">
+            <i class="bx bx-search"></i>
+            <a>Explore</a>
+          </div>
+          <div class="notifications left-sidebar__option mobile__nav">
+            <i class="bx bx-bell"></i>
+            <a>Notifications</a>
+            <span>5</span>
+          </div>
+          <div class="messages left-sidebar__option mobile__nav">
+            <i class="bx bx-envelope"></i>
+            <a>Messages</a>
+          </div>
+          <div class="lists left-sidebar__option">
+            <i class="bx bx-notepad"></i>
+            <a>Lists</a>
+          </div>
+          <div class="bookmarks left-sidebar__option">
+            <i class="bx bx-bookmark"></i>
+            <a>Bookmarks</a>
+          </div>
+          <div class="communities left-sidebar__option">
+            <i class="bi bi-people"></i>
+            <a>Communities</a>
+          </div>
+          <div class="verified left-sidebar__option">
+            <i class="bx bx-badge-check"></i>
+            <a>Verified</a>
+          </div>
+          <div class="profile left-sidebar__option">
+            <i class="bi bi-person"></i>
+            <a>Profile</a>
+          </div>
+          <div class="more left-sidebar__option">
+            <i class="bi bi-three-dots"></i>
+            <a>More</a>
+          </div>
+          <i class="bi bi-pencil-square"></i>
+          <button class="left-sidebar__tweet-button">
+            <span>Tweet</span>
+          </button>
+        </div>
+        <div class="left-sidebar__profile">
+          <div class="left-sidebar__profile-picture">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="left-sidebar__profile-details">
+            <div class="profile-name">
+              <p>Muhammad Saad</p>
+              <i class="bx bxs-lock"></i>
+            </div>
+            <p class="profile-username">@muhammadsaad53</p>
+          </div>
+          <i class="bi bi-three-dots"></i>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="tweets__section">
+          <header class="header">
+            <p>Home</p>
+            <div class="header__mobile">
+              <div class="mobile__profile-picture">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <i class="bx bxl-twitter logo"></i>
+              <i class="bx bx-moon theme-switcher"></i>
+            </div>
+            <div class="header__feed-select">
+              <a href="#" class="selected"><span>For you</span></a>
+              <a href="#"><span>Following</span></a>
+            </div>
+          </header>
+          <div class="header__feed-select mobile">
+            <a href="#" class="selected"><span>For you</span></a>
+            <a href="#"><span>Following</span></a>
+          </div>
+          <div class="main-content__tweets">
+            <div class="new-tweets">
+              <div class="ad-tweet">
+                <div class="tweet__profile-picture">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="tweet__description">
+                  <input
+                    type="text"
+                    name="tweet"
+                    placeholder="What is happening?!"
+                    class="tweet-text"
+                  />
+                  <div class="tweet-send">
+                    <div class="tweet-add-ons">
+                      <i class="fa-regular fa-image"></i>
+                      <i class="bi bi-filetype-gif"></i>
+                      <i class="bx bx-poll"></i>
+                      <i class="bx bx-smile"></i>
+                      <i class="bx bx-calendar"></i>
+                      <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <button class="tweet__send-button">Tweet</button>
+                  </div>
+                </div>
+              </div>
+              <div class="additional-tweets">
+                <p>Show 232 Tweets</p>
+              </div>
+            </div>
+
+            <div class="tweet-card type1">
+              <div class="tweet__profile-image">
+                <img
+                  src="./assets/HCaedgZ__400x400.jpg"
+                  alt="profile-picture"
+                />
+              </div>
+              <div class="tweet__data">
+                <div class="tweet__profile-info">
+                  <div class="tweet__name">
+                    <p class="name">Farid Khan</p>
+                    <i class="bx bxs-badge-check"></i>
+                    <p class="username">@_FaridKhan</p>
+                    <p class="time-ago">14h</p>
+                  </div>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="tweet__text">
+                  <p>
+                    This <span>#EmergingAsiaCup2023</span> is giving me 2017
+                    Champions Trophy vibes. India & Pakistan played the final,
+                    India had beaten Pakistan in groups, India won the semis vs
+                    Bangladesh and Pakistan won the semis vs the hosts. The same
+                    is happening here! Pakistan's title In Shaa Allah ❤️
+                  </p>
+                </div>
+                <div class="tweet__options">
+                  <div class="comments tweet__option">
+                    <i class="bi bi-chat"></i>
+                    <p>63</p>
+                  </div>
+                  <div class="retweets tweet__option">
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>41</p>
+                  </div>
+                  <div class="likes tweet__option">
+                    <i class="bx bx-heart"></i>
+                    <p>726</p>
+                  </div>
+                  <div class="views tweet__option">
+                    <i class="bx bx-poll"></i>
+                    <p>28.9K</p>
+                  </div>
+                  <i class="bx bx-upload tweet__option"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="tweet-card type2">
+              <div class="tweet__profile-image">
+                <img
+                  src="./assets/G8WFkcAa_400x400.jpg"
+                  alt="profile-picture"
+                />
+              </div>
+              <div class="tweet__data">
+                <div class="tweet__profile-info">
+                  <div class="tweet__name">
+                    <p class="name">Muhammad Haris</p>
+                    <!-- <i class="bx bxs-badge-check"></i> -->
+                    <p class="username">@iamharis63</p>
+                    <p class="time-ago">13h</p>
+                  </div>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="tweet__text">
+                  <p>
+                    Semi-finals done ☑️ into the finals we go against India on
+                    Sunday. We will give it our best🤲
+                    <span>#PAKvIND</span>
+                  </p>
+                </div>
+                <div class="tweet__picture">
+                  <img
+                    src="./assets/F1lDaGkX0AEQZfn.jpeg"
+                    alt="tweet-picture"
+                  />
+                </div>
+                <div class="tweet__options">
+                  <div class="comments tweet__option">
+                    <i class="bi bi-chat"></i>
+                    <p>340</p>
+                  </div>
+                  <div class="retweets tweet__option">
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>473</p>
+                  </div>
+                  <div class="likes tweet__option">
+                    <i class="bx bx-heart"></i>
+                    <p>11.3K</p>
+                  </div>
+                  <div class="views tweet__option">
+                    <i class="bx bx-poll"></i>
+                    <p>196.1K</p>
+                  </div>
+                  <i class="bx bx-upload tweet__option"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="tweet-card type2">
+              <div class="tweet__profile-image">
+                <img
+                  src="./assets/SmaHw6Rj_400x400.jpg"
+                  alt="profile-picture"
+                />
+              </div>
+              <div class="tweet__data golden">
+                <div class="tweet__profile-info">
+                  <div class="tweet__name">
+                    <p class="name">ESPNcricinfo</p>
+                    <i class="bx bxs-badge-check"></i>
+                    <p class="username">@ESPNcricinfo</p>
+                    <p class="time-ago">16h</p>
+                  </div>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="tweet__text">
+                  <p>
+                    It's been five years since Virat Kohli's last Test ton away
+                    from home ✈️
+                  </p>
+                </div>
+                <div class="tweet__picture">
+                  <img
+                    src="./assets/F1kgOGMaUAAR6TD.jpeg"
+                    alt="tweet-picture"
+                  />
+                </div>
+                <div class="tweet__options">
+                  <div class="comments tweet__option">
+                    <i class="bi bi-chat"></i>
+                    <p>75</p>
+                  </div>
+                  <div class="retweets tweet__option">
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>281</p>
+                  </div>
+                  <div class="likes tweet__option">
+                    <i class="bx bx-heart"></i>
+                    <p>6,198</p>
+                  </div>
+                  <div class="views tweet__option">
+                    <i class="bx bx-poll"></i>
+                    <p>248.4K</p>
+                  </div>
+                  <i class="bx bx-upload tweet__option"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="tweet-card type3">
+              <div class="tweet__profile-image">
+                <img
+                  src="./assets/d4LHjWDz_400x400.jpg"
+                  alt="profile-picture"
+                />
+              </div>
+              <div class="tweet__data">
+                <div class="tweet__profile-info">
+                  <div class="tweet__name">
+                    <p class="name">Sam 💎</p>
+                    <i class="bx bxs-badge-check"></i>
+                    <p class="username">@FcbxSam</p>
+                    <p class="time-ago">5h</p>
+                  </div>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="tweet__text">
+                  <p>
+                    Speed: “If Messi scores this free kick, I’m a Messi fan”
+                    😭😭
+                  </p>
+                </div>
+                <div class="tweet__video">
+                  <video
+                    src="./assets/video.mp4"
+                    autoplay
+                    muted
+                    controls
+                    loop
+                  ></video>
+                </div>
+                <div class="tweet__options">
+                  <div class="comments tweet__option">
+                    <i class="bi bi-chat"></i>
+                    <p>875</p>
+                  </div>
+                  <div class="retweets tweet__option">
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>10.9K</p>
+                  </div>
+                  <div class="likes tweet__option">
+                    <i class="bx bx-heart"></i>
+                    <p>80.8K</p>
+                  </div>
+                  <div class="views tweet__option">
+                    <i class="bx bx-poll"></i>
+                    <p>4M</p>
+                  </div>
+                  <i class="bx bx-upload tweet__option"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-sidebar">
+          <div class="search-bar">
+            <i class="bx bx-search"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search Twitter"
+            />
+          </div>
+          <div class="verification">
+            <h3>Get Verified</h3>
+            <p>Subscribe to unlock new features</p>
+            <a href="#">Get Verified</a>
+          </div>
+          <div class="trends">
+            <h3>Trends for you</h3>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Trending in Pakistan</p>
+                <h2 class="trend-heading">#ManipurViolence</h2>
+                <span class="trend-tweet-number">132K Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Sports . Trending</p>
+                <h2 class="trend-heading">#ICCWorldCup2023</h2>
+                <span class="trend-tweet-number">132K Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Politics . Trending</p>
+                <h2 class="trend-heading">#PakistanBackOnTrack</h2>
+                <span class="trend-tweet-number"
+                  >Trending with
+                  <span style="color: var(--primary-color)"
+                    >#NourishingPakistan</span
+                  ></span
+                >
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Trending in Pakistan</p>
+                <h2 class="trend-heading">#EmergingAsiaCup2023</h2>
+                <span class="trend-tweet-number">3,455 Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Trending in Pakistan</p>
+                <h2 class="trend-heading">#Lahore</h2>
+                <span class="trend-tweet-number">3,514 Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Trending in Pakistan</p>
+                <h2 class="trend-heading">Vigo</h2>
+                <span class="trend-tweet-number">10,685 Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Sports</p>
+                <h2 class="trend-heading">PakistanShaheens</h2>
+                <span class="trend-tweet-number">1,610 Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Trending in Pakistan</p>
+                <h2 class="trend-heading">#shameful</h2>
+                <span class="trend-tweet-number">9215 Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Sports</p>
+                <h2 class="trend-heading">#CWC23</h2>
+                <span class="trend-tweet-number">1,354 Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="trend">
+              <div class="trend-info">
+                <p class="trend-subheading">Sports</p>
+                <h2 class="trend-heading">Bangladesh</h2>
+                <span class="trend-tweet-number">25.4K Tweets</span>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="show-more">
+              <a href="#">Show more</a>
+            </div>
+          </div>
+          <div class="recommendations">
+            <h3>Who to Follow</h3>
+            <div class="recommendation">
+              <div class="recommendation__profile">
+                <div class="recommendation__profile-picture">
+                  <img src="./assets/sabir.jpg" alt="profile-picture" />
+                </div>
+                <div class="recommendation__profile-info">
+                  <span class="name">Sabir Shakir ARY</span>
+                  <span class="username">@ARYSabiirShakir</span>
+                </div>
+              </div>
+              <button class="recommendation__follow-button">
+                <p>Follow</p>
+              </button>
+            </div>
+            <div class="recommendation">
+              <div class="recommendation__profile">
+                <div class="recommendation__profile-picture">
+                  <img src="./assets/dd.jpg" alt="profile-picture" />
+                </div>
+                <div class="recommendation__profile-info">
+                  <span class="name">DD Geopolitics</span>
+                  <span class="username">@DD_Geopolitics</span>
+                </div>
+              </div>
+              <button class="recommendation__follow-button">
+                <p>Follow</p>
+              </button>
+            </div>
+            <div class="recommendation">
+              <div class="recommendation__profile">
+                <div class="recommendation__profile-picture">
+                  <img src="./assets/murtaza.jpg" alt="profile-picture" />
+                </div>
+                <div class="recommendation__profile-info">
+                  <span class="name">Murtaza Syed</span>
+                  <span class="username">@murtazahsyed</span>
+                </div>
+              </div>
+              <button class="recommendation__follow-button">
+                <p>Follow</p>
+              </button>
+            </div>
+            <div class="show-more">
+              <a href="#">Show more</a>
+            </div>
+          </div>
+          <footer>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Ads Info</a>
+            <a href="#">More...</a>
+            <p class="copyright">&copy; 2023 x Corp.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

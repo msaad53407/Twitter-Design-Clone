@@ -1,0 +1,211 @@
+.left-sidebar {
+  width: 23%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 20px;
+  overflow-x: hidden;
+}
+
+.left-sidebar__options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-bar .theme-switcher {
+  font-size: 34px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.logo-bar .bxl-twitter.logo {
+  color: var(--primary-color);
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.left-sidebar__options .bx,
+.left-sidebar__options .bi {
+  font-size: 26px;
+}
+
+.left-sidebar__option {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.left-sidebar__option a:hover {
+  color: var(--primary-color);
+}
+
+.left-sidebar__options:nth-child(1) i.bi.bi-three-dots {
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.left-sidebar__tweet-button {
+  margin-top: 12px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 26px;
+  min-height: 52px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bi.bi-pencil-square {
+  display: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi.bi-pencil-square::before {
+  font-size: 20px;
+}
+
+.left-sidebar__tweet-button span {
+  color: #fff;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.left-sidebar__option a {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.left-sidebar__profile {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 32px;
+}
+
+.left-sidebar__profile:hover {
+  background-color: var(--bg-color);
+}
+
+.left-sidebar__profile .bi.bi-three-dots {
+  width: 15%;
+  align-self: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-sidebar__profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 100%;
+}
+
+.left-sidebar__profile-picture .bi {
+  color: var(--grey);
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  border-radius: 50%;
+  background-color: rgb(184, 182, 182);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-sidebar__profile-details {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-name .bx {
+  font-size: 22px;
+}
+
+.profile-name p {
+  font-size: 14px;
+  color: var(--dark);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.profile-username {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.left-sidebar__options .home {
+  position: relative;
+}
+
+.left-sidebar__options .home::before {
+  content: "";
+  background-color: var(--primary-color);
+  width: 7.5px;
+  height: 7.5px;
+  position: absolute;
+  border-radius: 50%;
+  top: 6%;
+  left: 6.5%;
+}
+
+.left-sidebar__options .notifications {
+  position: relative;
+}
+
+.left-sidebar__options .notifications span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 1%;
+  left: 4.5%;
+  background-color: var(--primary-color);
+  border: 1px solid var(--light);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  font-weight: 500;
+}

@@ -1,0 +1,126 @@
+.main-content__tweets {
+  width: 100%;
+  height: max-content;
+  min-height: calc(100% - 95px);
+  padding: 15px;
+}
+
+.new-tweets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.ad-tweet {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  gap: 5px;
+}
+
+.tweet__description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-send {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  padding: 15px;
+  padding-top: 0;
+  color: var(--primary-color);
+}
+
+.tweet-add-ons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.tweet-add-ons .fa-regular {
+  font-size: 20px;
+}
+
+.tweet-add-ons .bx.bx-smile,
+.tweet-add-ons .bx.bx-calendar {
+  font-size: 22px;
+}
+
+.tweet-add-ons i {
+  font-size: 18px;
+}
+
+.tweet-add-ons .bx.bx-poll {
+  font-size: 22px;
+}
+
+.tweet__send-button {
+  color: #fff;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 18px;
+  min-width: 100px;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.tweet__description input {
+  outline: none;
+  border: none;
+  padding: 15px;
+  color: var(--dark);
+  font-size: 20px;
+  word-wrap: wrap;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.tweet__description input::placeholder {
+  color: var(--grey);
+}
+
+.tweet__profile-picture {
+  padding-top: 10px;
+  width: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tweet__profile-picture i {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(184, 182, 182);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey);
+  font-size: 36px;
+}
+
+.additional-tweets {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  border-top: 1px solid var(--border-color);
+  padding: 15px 0 0 0;
+}
+
+.additional-tweets p {
+  cursor: pointer;
+}

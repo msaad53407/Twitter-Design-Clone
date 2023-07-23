@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* Importing other CSS files */
+@import url("./sections/left-sidebar.css");
+@import url("./sections/header.css");
+@import url("./sections/tweets-section.css");
+@import url("./sections/tweet-card.css");
+@import url("./sections/right-sidebar.css");
+@import url("./sections/trends.css");
+@import url("./sections/responsive.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(29, 155, 240);
+  --dark: rgb(0, 0, 0);
+  --light: #fff;
+  --grey: rgb(83, 100, 113);
+  --border-color: rgba(177, 177, 177, 0.088);
+  --bg-color: rgba(134, 134, 134, 0.113);
+  --search-bg-color: rgba(32, 35, 39, 0.083);
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: "Poppins", sans-serif;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+body.dark {
+  --light: #000000;
+  --dark: #fff;
+  --border-color: rgba(83, 100, 113, 0.444);
+  --bg-color: rgb(22, 24, 28);
+  --search-bg-color: rgb(32, 35, 39);
+}
+
+body.dark .bx.logo {
+  color: #fff !important;
+}
+
+body.dark .bx.logo:hover {
+  color: var(--primary-color) !important;
+}
+
+body.dark .header {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  height: 100dvh;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 77%;
+  height: 100dvh;
+  overflow-x: hidden;
+  color: var(--dark);
+  display: flex;
+}
+
+.tweets__section {
+  flex: 2;
+  width: 90% !important;
+  height: max-content;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  min-width: 600px;
+}
+
+.right-sidebar {
+  flex: 1;
+  width: 30%;
+  height: max-content;
+}

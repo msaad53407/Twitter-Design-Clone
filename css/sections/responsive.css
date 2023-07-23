@@ -1,0 +1,164 @@
+/* Main Container Media Queries */
+@media screen and (max-width: 1279px) {
+  .container {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1133px) {
+  .main-content {
+    width: 600px !important;
+  }
+}
+
+@media screen and (max-width: 664px) {
+  .main-content {
+    flex: 1;
+    width: max-content !important;
+  }
+  .tweets__section {
+    min-width: unset !important;
+    width: fit-content !important;
+    flex-shrink: 3 !important;
+  }
+}
+
+/* Left Sidebar Media queries */
+@media screen and (max-width: 1279px) {
+  .left-sidebar {
+    width: 55px;
+    padding: 15px 10px;
+  }
+  .left-sidebar__tweet-button {
+    display: none;
+  }
+  .bi.bi-pencil-square {
+    display: flex;
+  }
+  .left-sidebar__option {
+    justify-content: center;
+  }
+  .left-sidebar__option a {
+    display: none;
+  }
+  .left-sidebar__profile {
+    padding: 0;
+  }
+  .left-sidebar__profile-picture {
+    width: 120%;
+  }
+  .left-sidebar__profile-picture i {
+    font-size: 30px !important;
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .left-sidebar__profile-details,
+  .left-sidebar__profile .bi.bi-three-dots {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .left-sidebar {
+    position: fixed;
+    bottom: 0;
+    overflow-x: hidden;
+    height: 50px;
+    width: 100vw;
+    background-color: var(--light);
+    border-top: 1px solid var(--border-color);
+    z-index: 10;
+  }
+  .left-sidebar__options {
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+  }
+  .left-sidebar__option:not(.mobile__nav),
+  .logo-bar,
+  .left-sidebar__profile,
+  .bi.bi.bi-pencil-square {
+    display: none;
+  }
+
+  .left-sidebar__options .notifications span {
+    left: 50%;
+  }
+
+  .left-sidebar__options .home::before {
+    left: 53%;
+  }
+  .mobile__profile-picture {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .mobile__profile-picture i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(184, 182, 182);
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+  }
+}
+/* Tweets Section Media Queries */
+@media screen and (max-width: 564px) {
+  .header {
+    position: static;
+    height: 60px;
+  }
+  .header__feed-select.mobile,
+  .header .header__mobile {
+    display: flex;
+  }
+  .header p,
+  .header__feed-select {
+    display: none;
+  }
+  .new-tweets {
+    display: none;
+  }
+  .main-content__tweets {
+    padding-top: 0;
+  }
+
+  .tweet__profile-image {
+    width: auto;
+  }
+
+  .tweet__data {
+    width: 83%;
+  }
+
+  .tweet__options {
+    max-width: unset;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .tweet__option {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .tweet__options {
+    gap: 12px;
+  }
+  .tweet__option {
+    gap: 5px;
+  }
+}
+/* Right Sidebar Media Queries */
+@media screen and (max-width: 1133px) {
+  .right-sidebar {
+    display: none;
+  }
+}
