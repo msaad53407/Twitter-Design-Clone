@@ -79,7 +79,8 @@
   .left-sidebar__option:not(.mobile__nav),
   .logo-bar,
   .left-sidebar__profile,
-  .bi.bi.bi-pencil-square {
+  .bi.bi.bi-pencil-square,
+  .left-sidebar__options .bx.bxl-twitter.logo {
     display: none;
   }
 
