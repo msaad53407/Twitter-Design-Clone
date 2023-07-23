@@ -15,20 +15,7 @@
   gap: 20px;
 }
 
-.logo-bar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo-bar .theme-switcher {
-  font-size: 34px;
-  color: var(--dark);
-  cursor: pointer;
-}
-
-.logo-bar .bxl-twitter.logo {
+.bxl-twitter.logo {
   color: var(--primary-color);
   font-size: 34px;
   cursor: pointer;

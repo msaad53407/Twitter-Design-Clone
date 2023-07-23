@@ -34,6 +34,18 @@
   align-self: flex-start;
 }
 
+.header__top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-switcher {
+  font-size: 30px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
 .header__feed-select.mobile {
   display: none;
   position: sticky;

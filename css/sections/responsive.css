@@ -118,7 +118,7 @@
   .header .header__mobile {
     display: flex;
   }
-  .header p,
+  .header__top-bar,
   .header__feed-select {
     display: none;
   }
