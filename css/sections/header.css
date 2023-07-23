@@ -6,7 +6,7 @@
   gap: 15px;
   padding: 15px;
   position: sticky;
-  top: 0;
+  top: -4px;
   border-bottom: 1px solid var(--border-color);
   background-color: #ffffff91;
   backdrop-filter: blur(12px);

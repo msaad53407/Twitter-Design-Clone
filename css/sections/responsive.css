@@ -79,7 +79,6 @@
   .left-sidebar__option:not(.mobile__nav),
   .logo-bar,
   .left-sidebar__profile,
-  .bi.bi.bi-pencil-square,
   .left-sidebar__options .bx.bxl-twitter.logo {
     display: none;
   }
@@ -108,8 +107,24 @@
     justify-content: center;
     font-size: 26px;
   }
+  .bi.bi-pencil-square {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+  .bi.bi-pencil-square::before {
+    font-size: 24px;
+  }
 }
 /* Tweets Section Media Queries */
+@media screen and (max-width: 1279px) {
+  .tweet__profile-image {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 564px) {
   .header {
     position: static;
